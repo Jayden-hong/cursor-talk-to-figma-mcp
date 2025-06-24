@@ -11,7 +11,8 @@
   "permissions": [],
   "networkAccess": {
     "allowedDomains": [
-      "https://google.com"
+      "https://cursor-talk-to-figma-mcp-production.up.railway.app",
+      "wss://cursor-talk-to-figma-mcp-production.up.railway.app"
     ],
     "devAllowedDomains": [
       "http://localhost:3055",
