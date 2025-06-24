@@ -2858,9 +2858,10 @@ function connectToFigma(port: number = 3055) {
     }
   });
 
-  ws.on('error', (error) => {
-    logger.error(`Socket error: ${error}`);
+  ws.on("error", (error: unknown) => {
+    console.error("WebSocket error", error);
   });
+  
 
   ws.on('close', () => {
     logger.info('Disconnected from Figma socket server');
